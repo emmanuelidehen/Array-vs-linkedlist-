@@ -1,5 +1,6 @@
 import java.util.Arrays;
 import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Stack;
 
 public class Arraysorting {
@@ -36,10 +37,18 @@ public class Arraysorting {
 			stack.push(new Integer(5)); // [3,5]
 			System.out.println(stack.peek()); // prints 5
 			stack.push(new Integer(6)); // [3,5,6]
-			int x = (int) stack.pop();
+			Object x =  stack.pop();
 			System.out.println(x); // prints 6
 			System.out.println(stack); // prints [3,5]
 		 
+			
+			Queue queue = new LinkedList();
+			queue.add(2); // [2]
+			queue.add(4); // [2,4]
+			System.out.println(queue.peek()); // prints 2
+			queue.add(5); // [2,4,5]
+			queue.poll();
+			System.out.println(queue); // prints [4,5]
 
 	}
 
