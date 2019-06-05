@@ -1,5 +1,6 @@
 import java.util.Arrays;
 import java.util.LinkedList;
+import java.util.Stack;
 
 public class Arraysorting {
 
@@ -28,6 +29,16 @@ public class Arraysorting {
 			lst.remove(19); // [15,21]
 			System.out.println(lst);
 		 
+			
+			// create a new stack
+			Stack stack = new Stack();
+			stack.push(new Integer(3)); // [3]
+			stack.push(new Integer(5)); // [3,5]
+			System.out.println(stack.peek()); // prints 5
+			stack.push(new Integer(6)); // [3,5,6]
+			int x = (int) stack.pop();
+			System.out.println(x); // prints 6
+			System.out.println(stack); // prints [3,5]
 		 
 
 	}
